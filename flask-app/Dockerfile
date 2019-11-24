@@ -5,4 +5,5 @@ FROM python:3-onbuild
 EXPOSE 5000
 
 # run the command
+CMD ["pip", "install", "--upgrade", "pip"]
 CMD ["python", "./app.py"]
